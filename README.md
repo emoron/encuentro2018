@@ -3,7 +3,7 @@
 ## Recursos Didacticos
 
 * [MermaidJS](https://mermaidjs.github.io/). - Libreria Javascript para generación de Diagramas de flujo utilizando Markdown
-* [Gravizo]()- API que permite incrustar diagramas en [GraphViz](),[Dot](),[Mermaid]() en editores Markdown en linea, incluyendo Github
+* [Gravizo]()- API que permite incrustar diagramas en [GraphViz](http://www.graphviz.org/),[Dot](http://www.graphviz.org/),[PlantUML](http://plantuml.com/) en editores Markdown en linea, incluyendo Github
 * [Markdown Plus](https://mdp.tylingsoft.com/#preferences-modal). Editor Markdown en linea que permite incluir graficos en GraphViz, Miriad y otros formatos
 * [flowcharj.js](). Libreria Javascript para la generación de SVG 
 * [GitBook](https://www.gitbook.com/). Documentación de proyectos en Markdown.
@@ -41,9 +41,20 @@ Describe gantt syntax               :after doc1, 3d
 Add gantt diagram to demo page      : 20h
 Add another diagram to demo page    : 48h
 ```
+### Diagrama de Estados
+```
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+@enduml
+```
 
 
-
+### Diagrama de Estados
+```
 ![Alt text](https://g.gravizo.com/svg?
   digraph G {
     aize ="4,4";
@@ -61,3 +72,4 @@ Add another diagram to demo page    : 48h
     execute -> compare;
   }
 )
+```
